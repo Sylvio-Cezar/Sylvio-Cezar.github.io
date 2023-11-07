@@ -1,59 +1,69 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página pessoal</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="profile-picture">
-            <img src="profile.jpg" alt="Foto de perfil">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="menu-icon">
+                <i class="fa fa-bars" onclick="toggleMenu()"></i>
+            </div>
+            <div class="profile-picture">
+                <img src="profile.jpg" alt="Foto de perfil">
+            </div>
+            <h1>Sylvio Cézar Rezende Pereira</h1>
+            <p>Córrego dos Mulatos | Estiva, Minas Gerais</p>
+            <p>Email: sylvio.015@gmail.com | Telefone: (99) 9 9999-9999</p>
+        </header>
+        <div id="headerMenu" class="menu">
+            <ul class="menu-items">
+                <li class="item"><a href="https://www.google.com" target="_blank">Item 1</a></li>
+                <li class="item"><a href="https://www.google.com" target="_blank">Item 2</a></li>
+                <li class="item"><a href="https://www.google.com" target="_blank">Item 3</a></li>
+            </ul>
         </div>
-        <h1>Sylvio Cézar Rezende Pereira</h1>
-        <p>Endereço | Cidade, Estado</p>
-        <p>Email: email@example.com | Telefone: (123) 456-7890</p>
-    </header>
-    <div class="menu">
-        <ul class="menu-items">
-            <li class="item"><a href="https://www.google.com" target="_blank">Item 1</a></li>
-            <li class="item"><a href="https://www.google.com" target="_blank">Item 2</a></li>
-            <li class="item"><a href="https://www.google.com" target="_blank">Item 3</a></li>
-            <li class="item"><a href="https://www.google.com" target="_blank">Item 4</a></li>
-        </ul>
-    </div>
-    
-    <section class="education">
-        <h2>Educação</h2>
-        <div class="item">
-            <h3>Nome da Universidade</h3>
-            <p>Bacharelado em Sistemas de Informação</p>
-            <p>2022-Atual</p>
-        </div>
-    </section>
-    
-    <section class="experience">
-        <h2>Experiência Profissional</h2>
-        <div class="item">
-            <h3>Gerente de Sistemas</h3>
-            <p>Empresa XYZ</p>
-            <p>2023-Atual</p>
-        </div>
-    </section>
-    
-    <section class="skills">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Desenvolvimento Web</li>
-            <li>Programação Orientada a Objetos</li>
-            <li>Princípios SOLID</li>
-        </ul>
-    </section>
-    
-    <footer>
-        <p>© 2023 Nome Completo. Todos os direitos reservados.</p>
-    </footer>
-</body>
+        
+        <section class="education">
+            <h2>Educação</h2>
+            <div class="item">
+                <h3>Universidade do Vale do Sapucai - Univás</h3>
+                <p>Bacharelado em Sistemas de Informação</p>
+                <p>2022 - Atual</p>
+            </div>
+            <div class="item">
+                <h3>Instituto Federal do Sul de Minas Gerais - Campus Pouso Alegre</h3>
+                <p>Técnico em Informática Integrado ao Ensino Médio</p>
+                <p>2019 - 2021</p>
+            </div>
+        </section>
+        
+        <section class="experience">
+            <h2>Experiência Profissional</h2>
+            <div class="item">
+                <h3>Estágio na área de desenvolvimento web/app</h3>
+                <p>Wecod</p>
+                <p>2022 - Atual</p>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desenvolvimento Web/App com os frameworks Angular e Ionic</li>
+                <li>Programação Orientada a Objetos</li>
+                <li>Princípios SOLID</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>© 2023 Sylvio Cézar Rezende Pereira. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
