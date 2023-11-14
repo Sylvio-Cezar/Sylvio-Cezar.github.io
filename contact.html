@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="contact-body">
+        <main id="main">
+            <header id="header">
+                <div class="profile-picture">
+                    <img src="profile.jpg" alt="Foto de perfil">
+                </div>
+                <h1>Sylvio Cézar Rezende Pereira</h1>
+                <p>Córrego dos Mulatos | Estiva, Minas Gerais</p>
+                <p>Email: sylvio.015@gmail.com | Telefone: (99) 9 9999-9999</p>
+            </header>
+            <div id="headerMenu" class="menu">
+                <ul class="menu-items">
+                    <li class="item"><a href="index.html"><i class="fa fa-home"></i></i> Início</a></li>
+                    <li class="item"><a href="https://www.github.com/sylvio-cezar" target="_blank"><i class="fa fa-github"></i> Github</a></li>
+                    <li class="item"><a href="contact.html"><i class="fa fa-address-card"></i></i> Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="container">
+                <h2 class="form-title">Formulário de Contato</h2>
+                <form id="contactForm">
+                    <label for="nameLbl">Nome: </label>
+                    <input type="text" name="nameLbl" id="nameLbl" required onkeyup="checkErrors()">
+                    <div id="nameErrors" class="error-div"></div>
+                    
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required onkeyup="checkErrors()">
+                    <div id="emailErrors" class="error-div"></div>
+
+                    <label for="message">Mensagem: </label>
+                    <textarea style="resize: none;" name="message" id="message" rows="4" required onkeyup="checkErrors()"></textarea>
+                    <div id="messageErrors" class="error-div"></div>
+        
+                    <button type="button" id="submit" onclick="submitForm()">Enviar</button>
+                </form>
+            </div>
+            
+            <footer>
+                <p>© 2023 Sylvio Cézar Rezende Pereira. Todos os direitos reservados.</p>
+            </footer>
+        </main>
+
+        <script src="contact-script.js"></script>
+    </body>
+</html>

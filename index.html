@@ -9,60 +9,82 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header id="header">
-            <div class="menu-icon">
-                <i class="fa fa-bars" onclick="toggleMenu()"></i>
-            </div>
-            <div class="profile-picture">
-                <img src="profile.jpg" alt="Foto de perfil">
-            </div>
-            <h1>Sylvio Cézar Rezende Pereira</h1>
-            <p>Córrego dos Mulatos | Estiva, Minas Gerais</p>
-            <p>Email: sylvio.015@gmail.com | Telefone: (99) 9 9999-9999</p>
-        </header>
-        <div id="headerMenu" class="menu">
-            <ul class="menu-items">
-                <li class="item"><a href="https://www.google.com" target="_blank">Item 1</a></li>
-                <li class="item"><a href="https://www.google.com" target="_blank">Item 2</a></li>
-                <li class="item"><a href="https://www.google.com" target="_blank">Item 3</a></li>
-            </ul>
+        <div id="menuToggle" class="menu-toggle">
+            <button id="toggleButton"><i class="fa fa-bars"></i></button>
         </div>
         
-        <section class="education">
-            <h2>Educação</h2>
-            <div class="item">
-                <h3>Universidade do Vale do Sapucai - Univás</h3>
-                <p>Bacharelado em Sistemas de Informação</p>
-                <p>2022 - Atual</p>
-            </div>
-            <div class="item">
-                <h3>Instituto Federal do Sul de Minas Gerais - Campus Pouso Alegre</h3>
-                <p>Técnico em Informática Integrado ao Ensino Médio</p>
-                <p>2019 - 2021</p>
-            </div>
-        </section>
-        
-        <section class="experience">
-            <h2>Experiência Profissional</h2>
-            <div class="item">
-                <h3>Estágio na área de desenvolvimento web/app</h3>
-                <p>Wecod</p>
-                <p>2022 - Atual</p>
-            </div>
-        </section>
-        
-        <section class="skills">
-            <h2>Habilidades</h2>
+        <nav class="sidebar">
             <ul>
-                <li>Desenvolvimento Web/App com os frameworks Angular e Ionic</li>
-                <li>Programação Orientada a Objetos</li>
-                <li>Princípios SOLID</li>
+                <li><a href="#header">Início</a></li>
+                <li><a href="#education">Educação</a></li>
+                <li><a href="#experience">Experiência Profissional</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#footer">Contato</a></li>
             </ul>
-        </section>
-        
-        <footer>
-            <p>© 2023 Sylvio Cézar Rezende Pereira. Todos os direitos reservados.</p>
-        </footer>
+        </nav>
+
+        <main id="main">
+            <header id="header">
+                <div class="profile-picture">
+                    <img src="profile.jpg" alt="Foto de perfil">
+                </div>
+                <h1>Sylvio Cézar Rezende Pereira</h1>
+                <p>Córrego dos Mulatos | Estiva, Minas Gerais</p>
+                <p>Email: sylvio.015@gmail.com | Telefone: (99) 9 9999-9999</p>
+            </header>
+            <div id="headerMenu" class="menu">
+                <ul class="menu-items">
+                    <li class="item"><a href="index.html"><i class="fa fa-home"></i></i> Início</a></li>
+                    <li class="item"><a href="https://www.github.com/sylvio-cezar" target="_blank"><i class="fa fa-github"></i> Github</a></li>
+                    <li class="item"><a href="contact.html"><i class="fa fa-address-card"></i></i> Contato</a></li>
+                </ul>
+            </div>
+            
+            <section id="education" class="education">
+                <h2>Educação</h2>
+                <div class="item">
+                    <h3>Universidade do Vale do Sapucai - Univás</h3>
+                    <p>Bacharelado em Sistemas de Informação</p>
+                    <p>2022 - Atual</p>
+                </div>
+                <div class="item">
+                    <h3>Instituto Federal do Sul de Minas Gerais - Campus Pouso Alegre</h3>
+                    <p>Técnico em Informática Integrado ao Ensino Médio</p>
+                    <p>2019 - 2021</p>
+                </div>
+            </section>
+            
+            <section id="experience" class="experience">
+                <h2>Experiência Profissional</h2>
+                <div class="item">
+                    <h3>Estágio na área de desenvolvimento Web/App</h3>
+                    <p>Wecod</p>
+                    <p>2022 - Atual</p>
+                </div>
+            </section>
+            
+            <section id="skills" class="skills">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Desenvolvimento Web/App com os frameworks Angular e Ionic</li>
+                    <li>Programação Orientada a Objetos</li>
+                    <li>Princípios SOLID</li>
+                </ul>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2>Projetos</h2>
+                <ul>
+                    <li><a href="https://www.google.com" target="_blank">Exemplo de projeto 1</a></li>
+                    <li><a href="https://www.google.com" target="_blank">Exemplo de projeto 2</a></li>
+                </ul>
+            </section>
+            
+            <footer>
+                <p>© 2023 Sylvio Cézar Rezende Pereira. Todos os direitos reservados.</p>
+            </footer>
+        </main>
 
         <script src="script.js"></script>
     </body>

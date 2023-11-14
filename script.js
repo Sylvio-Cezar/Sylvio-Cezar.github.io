@@ -1,12 +1,17 @@
-let header = document.getElementById('header');
-let menu = document.getElementById('headerMenu');
+const menuToggle = document.getElementById("menuToggle");
+const toggleButton = document.getElementById("toggleButton");
+const mainArea = document.getElementById("main");
+const sidebar = document.querySelector(".sidebar");
+const main = document.querySelector("main");
 
-function toggleMenu() {
-    if (menu.classList.contains('disabled-menu')) {
-        menu.classList.remove('disabled-menu');
-        header.classList.remove('rounded-header');
-    } else {
-        menu.classList.add('disabled-menu');
-        header.classList.add('rounded-header');
-    }
-}
+toggleButton.addEventListener("click", function() {
+    sidebar.classList.toggle("opened");
+    main.classList.toggle("main");
+    menuToggle.classList.toggle("fixed-menu");
+});
+
+mainArea.addEventListener("click", function() {
+    sidebar.classList.remove("opened");
+    main.classList.remove("main");
+    menuToggle.classList.remove("fixed-menu");
+});
