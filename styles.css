@@ -180,6 +180,12 @@ footer {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
 .container .form-title {
     text-align: center;
     color: rgba(127,16,16,1);
