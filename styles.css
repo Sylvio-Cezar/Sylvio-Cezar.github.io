@@ -168,6 +168,23 @@ footer p {
     font-size: 28px;
 }
 
+.projects-list {
+    list-style: none;
+    font-size: 18px;
+}
+
+.projects-list li {
+    margin-bottom: 5px;
+}
+
+.projects-list li:hover {
+    font-size: 20px;
+}
+
+.projects-list li a {
+    text-decoration: none;
+}
+
 /* contact page */
 
 .container {
@@ -198,6 +215,7 @@ footer p {
 
 .container form:invalid>#submit {
     pointer-events: none;
+    opacity: 0.8;
 }  
 
 .container label {
